@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ListView
-    android:id="@+id/list"
+<LinearLayout
+    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,5 +8,16 @@
     tools:context="com.example.android.newsapp.NewsActivity">
 
 
+<TextView
+    tools:text="@string/no_internet_connection"
+    android:id="@+id/no_internet_text_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
 
-</ListView>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>
